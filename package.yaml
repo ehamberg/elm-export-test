@@ -1,0 +1,33 @@
+name: eetest
+version: '0.1.0.0'
+synopsis: Test
+description: Please see README.md
+category: Web
+author: Erlend Hamberg
+maintainer: erlend@hamberg.no
+copyright: Erlend Hamberg
+license: AllRightsReserved
+
+ghc-options:
+  - -O2
+  - -Wall
+  - -Werror
+
+default-extensions:
+  - OverloadedStrings
+
+executables:
+  eetest:
+    main: Main.hs
+    source-dirs: src
+    dependencies:
+      - base
+      - aeson
+      - containers
+      - elm-export
+      - servant-server
+      - servant-elm
+      - template-haskell
+      - text
+      - warp
+      - wai-cors
